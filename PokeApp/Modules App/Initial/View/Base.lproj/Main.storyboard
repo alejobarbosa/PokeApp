@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dcY-c2-jFd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="HGY-hM-SrE">
+            <objects>
+                <navigationController id="dcY-c2-jFd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0ce-3t-AH0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kbf-if-dPc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCz-CG-nGf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1434" y="-36"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PokeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="3dp-JG-t1z">
+                                <rect key="frame" x="134.5" y="481.5" width="766" height="514"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3dp-JG-t1z" secondAttribute="height" multiplier="383:257" id="6cs-YZ-Ydl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgx-Gb-AYL">
+                                <rect key="frame" x="95" y="430" width="224" height="46.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="38"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know my contact info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2O5-5P-HBL">
+                                <rect key="frame" x="108" y="442" width="198" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="QB6-Gn-aqm">
+                                <rect key="frame" x="62" y="395" width="290" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QB6-Gn-aqm" secondAttribute="height" multiplier="1417:567" id="sYH-6Q-R97"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQa-pv-mKF">
+                                <rect key="frame" x="31" y="493" width="352" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alejandro Barbosa " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhr-mg-QgN">
+                                        <rect key="frame" x="96.5" y="20" width="159.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlS-NJ-WDB">
+                                        <rect key="frame" x="126" y="48" width="100" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alejobarbosalee@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f1-EF-lGs">
+                                        <rect key="frame" x="76.5" y="65.5" width="199.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dhr-mg-QgN" firstAttribute="top" secondItem="oQa-pv-mKF" secondAttribute="top" constant="20" id="1BW-fR-wOO"/>
+                                    <constraint firstItem="tlS-NJ-WDB" firstAttribute="top" secondItem="dhr-mg-QgN" secondAttribute="bottom" constant="8" id="5kh-ar-79F"/>
+                                    <constraint firstItem="dhr-mg-QgN" firstAttribute="centerX" secondItem="oQa-pv-mKF" secondAttribute="centerX" id="EfN-V1-pbI"/>
+                                    <constraint firstItem="tlS-NJ-WDB" firstAttribute="centerX" secondItem="oQa-pv-mKF" secondAttribute="centerX" id="TAd-xF-Se8"/>
+                                    <constraint firstItem="3f1-EF-lGs" firstAttribute="top" secondItem="tlS-NJ-WDB" secondAttribute="bottom" id="fQS-cB-mut"/>
+                                    <constraint firstItem="3f1-EF-lGs" firstAttribute="centerX" secondItem="oQa-pv-mKF" secondAttribute="centerX" id="qow-0H-uqd"/>
+                                    <constraint firstAttribute="height" constant="101" id="ylU-G2-UYZ"/>
+                                </constraints>
+                            </view>
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAu-v5-kca">
+                                <rect key="frame" x="41.5" y="876" width="331" height="60"/>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.43137254901960786" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="UWv-jb-GDo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onStartClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppT-N2-F51"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next1" translatesAutoresizingMaskIntoConstraints="NO" id="Nzg-OR-B0N">
+                                <rect key="frame" x="309" y="894" width="24" height="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Nzg-OR-B0N" secondAttribute="height" multiplier="1:1" id="FKa-ok-egC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.80784313725490198" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hAu-v5-kca" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="05m-ug-YOu"/>
+                            <constraint firstAttribute="bottom" secondItem="3dp-JG-t1z" secondAttribute="bottom" multiplier="0.9" id="3rd-yg-spO"/>
+                            <constraint firstItem="hAu-v5-kca" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4vh-ZM-E1l"/>
+                            <constraint firstItem="Lgx-Gb-AYL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7KI-eX-WUQ"/>
+                            <constraint firstItem="Nzg-OR-B0N" firstAttribute="height" secondItem="hAu-v5-kca" secondAttribute="height" multiplier="0.4" id="A5S-lU-t5h"/>
+                            <constraint firstItem="oQa-pv-mKF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DWy-Ta-zz6"/>
+                            <constraint firstItem="hAu-v5-kca" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="2" id="IyQ-3T-iIM"/>
+                            <constraint firstItem="2O5-5P-HBL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="U8W-LK-4b9"/>
+                            <constraint firstItem="QB6-Gn-aqm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ag7-sP-u8u"/>
+                            <constraint firstItem="Nzg-OR-B0N" firstAttribute="centerY" secondItem="hAu-v5-kca" secondAttribute="centerY" id="anB-d5-DCf"/>
+                            <constraint firstItem="QB6-Gn-aqm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cpg-6Y-PBT"/>
+                            <constraint firstItem="Nzg-OR-B0N" firstAttribute="centerX" secondItem="hAu-v5-kca" secondAttribute="centerX" multiplier="1.55" id="d1N-BZ-Y2R"/>
+                            <constraint firstItem="oQa-pv-mKF" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.2" id="goG-dv-tEQ"/>
+                            <constraint firstItem="3dp-JG-t1z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="2.5" id="nb2-3a-fuj"/>
+                            <constraint firstItem="Lgx-Gb-AYL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="oZf-ib-Fga"/>
+                            <constraint firstItem="2O5-5P-HBL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sE5-76-A1x"/>
+                            <constraint firstItem="3dp-JG-t1z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1.85024" id="uRU-cN-4kU"/>
+                            <constraint firstItem="QB6-Gn-aqm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="wjk-3R-W07"/>
+                            <constraint firstItem="oQa-pv-mKF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.85" id="zZW-nT-bgR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="am3-X5-i53"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="btNext" destination="hAu-v5-kca" id="HcY-iW-gmh"/>
+                        <outlet property="btStart" destination="hAu-v5-kca" id="NiM-IQ-i5U"/>
+                        <outlet property="btYPosition" destination="IyQ-3T-iIM" id="kud-PN-blf"/>
+                        <outlet property="detailsView" destination="oQa-pv-mKF" id="6Cj-6b-8k4"/>
+                        <outlet property="iconNext" destination="Nzg-OR-B0N" id="Qlh-Rw-IsH"/>
+                        <outlet property="imagePikachu" destination="3dp-JG-t1z" id="SFJ-QZ-8i4"/>
+                        <outlet property="knowYPosition" destination="U8W-LK-4b9" id="DaP-UY-gRy"/>
+                        <outlet property="lblKnow" destination="2O5-5P-HBL" id="tfJ-KM-X8A"/>
+                        <outlet property="lblWelcome" destination="Lgx-Gb-AYL" id="Zu4-Gk-JP5"/>
+                        <outlet property="pikachuXPosition" destination="nb2-3a-fuj" id="9nH-Lb-wlh"/>
+                        <outlet property="pokemonYPosition" destination="ag7-sP-u8u" id="JSR-1M-Yhv"/>
+                        <outlet property="viewYPosition" destination="goG-dv-tEQ" id="zYM-pU-7Ic"/>
+                        <outlet property="welcomeYPosition" destination="oZf-ib-Fga" id="HOO-Wy-Lnj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571" y="-36"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pikachu" width="766" height="514"/>
+        <image name="Pokemon" width="320" height="117"/>
+        <image name="next1" width="64" height="64"/>
+    </resources>
+</document>
